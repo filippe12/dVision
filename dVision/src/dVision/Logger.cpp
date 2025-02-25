@@ -1,3 +1,4 @@
+#include "dvpch.h"
 #include "Logger.h"
 namespace dVision {
 	

@@ -1,10 +1,11 @@
 #pragma once
 
-#include <memory>
-
 #include "Core.h"
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
+#include "spdlog/fmt/ostr.h"
+#include "spdlog/fmt/bundled/core.h"
+#include "spdlog/fmt/bundled/ostream.h"
 
 namespace dVision {
 	class DVISION_API Logger

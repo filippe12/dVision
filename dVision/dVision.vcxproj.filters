@@ -4,6 +4,9 @@
     <Filter Include="dVision">
       <UniqueIdentifier>{C1E8C7E5-2DC8-4681-36E0-D157A23EADE2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="dVision\Events">
+      <UniqueIdentifier>{8511EA51-71DF-DD57-5A73-4E7E46E0B9BC}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\dVision.h" />
@@ -16,9 +19,22 @@
     <ClInclude Include="src\dVision\EntryPoint.h">
       <Filter>dVision</Filter>
     </ClInclude>
+    <ClInclude Include="src\dVision\Events\ApplicationEvent.h">
+      <Filter>dVision\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dVision\Events\Event.h">
+      <Filter>dVision\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dVision\Events\KeyboardEvent.h">
+      <Filter>dVision\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dVision\Events\MouseEvent.h">
+      <Filter>dVision\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\dVision\Logger.h">
       <Filter>dVision</Filter>
     </ClInclude>
+    <ClInclude Include="src\dvpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dVision\Application.cpp">
@@ -27,5 +43,6 @@
     <ClCompile Include="src\dVision\Logger.cpp">
       <Filter>dVision</Filter>
     </ClCompile>
+    <ClCompile Include="src\dvpch.cpp" />
   </ItemGroup>
 </Project>

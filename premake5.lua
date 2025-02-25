@@ -18,6 +18,9 @@ project "dVision"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "dvpch.h"
+	pchsource "dVision/src/dvpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -26,7 +29,8 @@ project "dVision"
 
 	includedirs
 	{
-		"dVision/vendor/spdlog/include"
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include"
 	}
 
 	filter "system:windows"

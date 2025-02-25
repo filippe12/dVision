@@ -2,6 +2,8 @@
 
 #include "Core.h"
 
+
+
 namespace dVision {
 	class DVISION_API Application
 	{
